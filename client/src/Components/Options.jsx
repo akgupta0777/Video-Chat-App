@@ -38,9 +38,8 @@ const useStyles = makeStyles((theme) => ({
 
 const Options = ({children}) => {
     const classes = useStyles();
-    const {me, callAccepted, name, SetName, callEnded, leaveCall, callUser} = useContext(SocketContext);
-    const {idToCall,setIdToCall} = useState('');
-    const [Name,setName] = useState('')
+    const {me, callAccepted, name, setName, callEnded, leaveCall, callUser} = useContext(SocketContext);
+    const [idToCall,setIdToCall] = useState('');
     return (
         <Container className={classes.container}>
             <Paper elevation={10} className={classes.paper}>
@@ -80,8 +79,8 @@ const Options = ({children}) => {
                         </Grid>
                     </Grid>
                 </form>
+                {children}
             </Paper>
-            {children}
         </Container>
     )
 }
