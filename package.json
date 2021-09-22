@@ -4,7 +4,7 @@
   "description": "I am starting developing a video chat application with react and websockets.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
